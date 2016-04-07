@@ -35,11 +35,11 @@
      -->
     <script src="popup.js"></script>
   </head>
-  <body>
+  <body ng-app="chromeApp" ng-controller="AppCtrl as app">
     <div id="box">
       <h1>My first Chrome app</h1>
       <p>Trying out Chrome extentions to see how they are built</p>
-      <div id="status"></div>
+      <h3>{{ app.title }}</h3>
     </div>
   </body>
 </html>
